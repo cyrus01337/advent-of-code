@@ -1,0 +1,42 @@
+{
+    "name": "advent-of-code",
+    "version": "1.0.0",
+    "description": "Advent of Code solutions",
+    "type": "module",
+    "main": "./main.js",
+    "engines": {
+        "node": "18.x",
+        "pnpm": "7.x"
+    },
+    "exports": {
+        ".": "./src/index.js",
+        "./days": "./src/days/index.js",
+        "./loader": "./loader.js",
+        "./parser": "./src/parser.js",
+        "./resources": "./src/resources"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "start": "node ."
+    },
+    "author": "cyrus01337",
+    "license": "UNLICENSE",
+    "devDependencies": {
+        "@babel/core": "~7.20.5",
+        "@babel/eslint-parser": "^7.19.1",
+        "@babel/plugin-syntax-import-assertions": "^7.20.0",
+        "@babel/plugin-transform-runtime": "^7.19.6",
+        "@babel/preset-env": "^7.20.2",
+        "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+        "eslint": "^8.29.0",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "^2.8.0",
+        "prettier-plugin-sort-json": "^0.0.3"
+    },
+    "optionalDependencies": {
+        "@vue/compiler-sfc": "~3.2.45"
+    },
+    "dependencies": {
+        "yargs": "^17.6.2"
+    }
+}
